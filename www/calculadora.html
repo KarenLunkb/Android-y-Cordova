@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='"-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <!--link rel="stylesheet" type="text/css" href="css/index.css" -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+
+        <!-- JS para jquery mobile -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <title>Calculadora</title>
+    </head>
+    <body style="background-color:#34495E">
+
+            <h1><strong>Calculadora</strong></h1>
+
+
+        <form name='botones'>
+          <table>
+              <tr>
+                <td colspan="5"><input type="text" name="dato" id="dato" onkeypress="return numero_valido(event)" value=""></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="<-"></td>
+                <td><input type="button" value="C"></td>
+                <td><input type="button" value="/"></td>
+                <td><input type="button" value="x"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value='7' onclick="enviar_valor(value)"></td>
+                <td><input type="button" value='8' onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="9" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="+"></td>
+
+              </tr>
+              <tr>
+                <td><input type="button" value="4" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="5" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="6" onclick="enviar_valor(value)"></td>
+
+                <td><input type="button" value="-"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="1" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="2" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="3" onclick="enviar_valor(value)"></td>
+                <td><input type="button" value="."></td>
+              </tr>
+              <tr>
+
+                <td colspan="2"><input type="button" value="0" onclick="enviar_valor(value)"></td>
+
+                <td colspan="2"><input type="button" value="="></td>
+
+              </tr>
+          </table>
+        </form>
+
+        <script type="text/javascript" src="js/teclas.js"></script>
+
+    </body>
+</html>
