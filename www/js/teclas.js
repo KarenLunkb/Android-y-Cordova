@@ -39,3 +39,23 @@ function enviar_valor(num){
   document.getElementById("dato").value = valor_num + num;
 
 }
+
+// **** Dando funcionalidad a las variables de operabilidad ****
+
+// Codigo para eliminar solo un valor numerico del input
+function borrar(){
+  var anterior = document.botones.dato.value;
+  //alert(anterior.length-1) ;
+  // método substring () devuelve una nueva cadena que es una subcadena de una cadena dada.
+  var nuevo = anterior.substring(0, anterior.length-1);
+  document.getElementById('dato').value = nuevo;
+}
+
+// Codigo para eliminar todos los numeros del input
+function borrar_todo(){
+  document.botones.dato.value = "";
+}
+
+// Codigo para operaciones matematicas
+// Codigo para no repetir el mismo operador matematico
+// Codigo para obtener el resultado de la operacion matematica
