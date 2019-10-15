@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dibujando con flechas</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- JS para jquery mobile -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Dibujo con flechas</h1>
+    <canvas id="area_de_dibujo" width="300" height="300"></canvas>
+    <p>Mueve las flechas del teclado para dibujar</p>
+    <form name="botones">
+      <table>
+        <td> <input type="button" name="" data-icon="arrow-l" onclick="dibujarTeclado()"> </td>
+        <td> <input type="button" name="" data-icon="arrow-u" onclick="dibujarTeclado()"> </td>
+        <td> <input type="button" name="" data-icon="arrow-d" onclick="dibujarTeclado()"> </td>
+        <td> <input type="button" name="" data-icon="arrow-r" onclick="dibujarTeclado()"> </td>
+      </table>
+    </form>
+    <script type="text/javascript" src="js/dibujo.js"></script>
+  </body>
+</html>
